@@ -1,0 +1,158 @@
+﻿.title
+{
+    margin: auto;
+	width: 100%;
+    text-align: center;
+	padding: 1px;
+    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+	border-radius: 15px;
+       
+    background-color: #666;
+
+    font-family:Helvetica,Tahoma, sans-serif;
+    color: #ddd;
+	font-size:64px;
+}
+.footer
+{
+	color: #BBB;
+	text-align:center;
+}
+
+.content
+{
+	margin-left: 20px;
+	font-size: x-large;
+}
+
+.album
+{
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #666;
+	color: #DDD;
+	padding: 10px;
+	font-size: xx-large;
+}
+
+.albumyear
+{
+    color: #888;
+}
+
+.song
+{
+	margin-left: 20px;
+	font-size: xx-large;
+	vertical-align:middle;
+}
+
+a:link
+{
+	color:#333;
+	text-decoration: underline; 
+}
+
+td a:link
+{
+	text-decoration:none;
+	color:#FFF;
+	border:0px;
+}
+
+
+td a:visited
+{
+	color:#FFF;
+	text-decoration:none;
+		border:0px;
+
+}
+
+td a:hover
+{
+	color:lime
+}
+
+a:hover
+{
+	color:lime;
+}
+
+
+audio
+{
+	#margin-top: 7px;
+}
+
+body
+{
+	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 70%;
+	color:#333;
+	background-image: url('pixels/inside.jpg');
+	background-repeat:no-repeat;
+    background-position:left bottom;
+    background-attachment:fixed;
+ }
+ 
+ img
+ {
+	border: 0px;
+}
+
+table
+{
+
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+    text-align: left;
+	padding: 10px;
+}
+
+.center
+{
+	text-align:center;
+	margin: auto;
+}
+
+td 
+{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #666;
+	color: #DDD;
+}
+
+td.white
+{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #FFF;
+	color: #333;
+	text-align:center;
+}
+
+#player
+{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	position: fixed;
+	opacity: .8;
+}
+
+twitter-share-button
+{
+    display: inline;
+}
