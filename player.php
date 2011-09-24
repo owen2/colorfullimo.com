@@ -6,9 +6,12 @@
 	$q = 'SELECT * FROM `Songs` LEFT JOIN `Albums` ON `Songs`.`Album`=`Albums`.`id` WHERE `Songs`.`id` = ' . $_REQUEST['song'];
 	$result = mysql_query($q);
 	$song = mysql_fetch_array($result);
+	$title = $song['title'];
+	$album = $song['name'];
+	$id = $song['id'];
 ?>
 
-<?php //echo($song['name']); ?> <!--<br />-->
+<?php echo($title);?> <span class="content noindent">on</span> <?php echo($album);?><br>
 <audio controls="controls" autoplay="autoplay">
     <source src="samples/<?php echo($song['path']); ?>" type="audio/ogg" />
     <source src="samples/<?php echo($song['path']); ?>.mp3" type="audio/mpeg" />
@@ -21,13 +24,18 @@ value="http://flash-mp3-player.net/medias/player_mp3.swf" />
     <param name="FlashVars" 
 value="mp3=http%3A//colorfullimo.com/samples/<?php 
 echo($song['path']);?>.mp3" />
-There is a nifty music player here, but your user agent doesn't support 
-html5 or flash or fun.
+There is a nifty music player here, but your browser doesn't support 
+html5 or flash or fun. :(
 </object>
 </audio>
-<?php echo($song['title']);?>
+<p class="content">
+<?php 
+    if (isset($song['story']))
+        echo($song['story']);
+?>
+</p>
 <script type="text/javascript">
-history.pushState(stateObj, "<?php echo($song['title']);?>", "http://colorfullimo.com/?song="<?php echo($song['id']); ?>");
+history.pushState(stateObj, '"<?php echo($title);?>"', 'http://colorfullimo.com/?song="<?php echo($id); ?>"');
 </script>
 <script type="text/javascript">
 

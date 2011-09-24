@@ -1,55 +1,55 @@
 ﻿.title
 {
-    margin: auto;
-	width: 100%;
     text-align: center;
-	padding: 1px;
-    
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-	border-radius: 15px;
-       
-    background-color: #666;
-
-    font-family:Helvetica,Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     color: #ddd;
-	font-size:64px;
 }
 .footer
 {
+        font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 	color: #BBB;
 	text-align:center;
 }
 
 .content
 {
-	margin-left: 20px;
-	font-size: x-large;
+	margin-left: 20px;    
+	
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:#ddd;
+}
+
+.bubble
+{
+	border-radius: 10px;
+	background-color: #666;
+	padding: 10px;
+	margin: 10px;
 }
 
 .album
 {
-	margin-left: 0px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	-webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-	border-radius: 10px;
-	background-color: #666;
-	color: #DDD;
-	padding: 10px;
-	font-size: xx-large;
+	color: #F80;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 .albumyear
 {
     color: #888;
+    font-family: 'Opens Sans', sans-serif;
+    font-weight: 400;
 }
 
 .song
 {
+    color:#ddd;
 	margin-left: 20px;
-	font-size: xx-large;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 	vertical-align:middle;
 }
 
@@ -59,15 +59,37 @@ a:link
 	text-decoration: underline; 
 }
 
-td a:link
+.song a:link
 {
 	text-decoration:none;
 	color:#FFF;
 	border:0px;
 }
 
+.stackleft
+{
+    float:left;
+    margin-right:0;
+    width:40%;
+}
 
-td a:visited
+.stackright
+{
+    float:right;
+    margin-left:0;
+    width:60%;
+}
+
+.noindent
+{
+    margin-left: 0em;
+}
+
+.column-break
+{
+    clear:both;
+}
+.song a:visited
 {
 	color:#FFF;
 	text-decoration:none;
@@ -75,7 +97,7 @@ td a:visited
 
 }
 
-td a:hover
+.song:hover
 {
 	color:lime
 }
@@ -88,35 +110,23 @@ a:hover
 
 audio
 {
-	#margin-top: 7px;
+	margin-top: 7px;
 }
 
 body
 {
-	margin:auto;
-	font-family:Arial, Helvetica, sans-serif;
+	margin-left: 25%;
 	width: 70%;
-	color:#333;
+
 	background-image: url('pixels/inside.jpg');
 	background-repeat:no-repeat;
     background-position:left bottom;
     background-attachment:fixed;
- }
- 
- img
- {
-	border: 0px;
 }
-
-table
+ 
+img
 {
-
-	margin: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 100%;
-    text-align: left;
-	padding: 10px;
+	border: 0px;
 }
 
 .center
@@ -125,25 +135,7 @@ table
 	margin: auto;
 }
 
-td 
-{
-	-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #666;
-	color: #DDD;
-}
-
-td.white
-{
-	-webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-	border-radius: 5px;
-	background-color: #FFF;
-	color: #333;
-	text-align:center;
-}
-
+/*
 #player
 {
 	text-transform: uppercase;
@@ -151,7 +143,7 @@ td.white
 	position: fixed;
 	opacity: .8;
 }
-
+*/
 twitter-share-button
 {
     display: inline;
