@@ -55,15 +55,8 @@
 
 a:link
 {
-	color:#333;
+	color:#fff;
 	text-decoration: underline; 
-}
-
-.song a:link
-{
-	text-decoration:none;
-	color:#FFF;
-	border:0px;
 }
 
 .stackleft
@@ -89,12 +82,11 @@ a:link
 {
     clear:both;
 }
-.song a:visited
+
+a:visited
 {
 	color:#FFF;
 	text-decoration:none;
-		border:0px;
-
 }
 
 .song:hover
@@ -133,18 +125,4 @@ img
 {
 	text-align:center;
 	margin: auto;
-}
-
-/*
-#player
-{
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	position: fixed;
-	opacity: .8;
-}
-*/
-twitter-share-button
-{
-    display: inline;
 }
