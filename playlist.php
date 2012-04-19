@@ -31,15 +31,16 @@
 		echo("</div>");
 	}
 
-		renderAlbums();
-		echo(mysql_error());
     
-    function loadRandomSong()
-    {
+    	function loadRandomSong()
+    	{
 	    $q = "SELECT * FROM `Songs` WHERE `album` = 1 ORDER BY rand()";
 	    $result = mysql_query($q);
 		echo(mysql_error());
 		$s = mysql_fetch_array($result);
 		?><script type="text/javascript">$("#player").load("player.php?song=<?php echo($s['id']); ?>");</script><?php
 	}
+
+		renderAlbums();
+		echo(mysql_error());
 ?>

@@ -12,6 +12,14 @@
 	color: #BBB;
 	text-align:center;
 }
+.footer a:link
+{
+    color: #BBB;
+}
+.footer a:link
+{
+    color: #BBB;
+}
 
 .content
 {
@@ -53,7 +61,7 @@
 	vertical-align:middle;
 }
 
-a:link
+.bubble a:link
 {
 	color:#fff;
 	text-decoration: underline; 
@@ -83,7 +91,7 @@ a:link
     clear:both;
 }
 
-a:visited
+.bubble a:visited
 {
 	color:#FFF;
 	text-decoration:none;
