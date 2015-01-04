@@ -1,13 +1,48 @@
-﻿.title
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #fff;
+
+  margin-left: 25%;
+  width: 70%;
+
+  background-image: url('pixels/inside.jpg');
+  background-repeat:no-repeat;
+  background-position:left bottom;
+  background-attachment:fixed;
+}
+
+h1
 {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    margin:auto;
     font-weight: 800;
     color: #ddd;
+    text-transform: uppercase;
 }
+
+h2
+{
+  color: lime;
+  font-weight: 700;
+}
+
+a:link
+{
+  color: lime;
+}
+
+section
+{
+  border-radius: 10px;
+  background-color: #444;
+  padding: 10px;
+  margin: 10px;
+}
+
 .footer
 {
-        font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 	color: #BBB;
 	text-align:center;
@@ -15,56 +50,6 @@
 .footer a:link
 {
     color: #BBB;
-}
-.footer a:link
-{
-    color: #BBB;
-}
-
-.content
-{
-	margin-left: 20px;    
-	
-	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color:#ddd;
-}
-
-.bubble
-{
-	border-radius: 10px;
-	background-color: #666;
-	padding: 10px;
-	margin: 10px;
-}
-
-.album
-{
-	color: #F80;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-}
-
-.albumyear
-{
-    color: #888;
-    font-family: 'Opens Sans', sans-serif;
-    font-weight: 400;
-}
-
-.song
-{
-    color:#ddd;
-	margin-left: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-	vertical-align:middle;
-}
-
-.bubble a:link
-{
-	color:#fff;
-	text-decoration: underline; 
 }
 
 .stackleft
@@ -81,56 +66,18 @@
     width:60%;
 }
 
-.noindent
+a:visited
 {
-    margin-left: 0em;
-}
-
-.column-break
-{
-    clear:both;
-}
-
-.bubble a:visited
-{
-	color:#FFF;
+	color:lime;
 	text-decoration:none;
-}
-
-.song:hover
-{
-	color:lime
 }
 
 a:hover
 {
-	color:lime;
+	color:orange;
 }
 
-
-audio
-{
-	margin-top: 7px;
-}
-
-body
-{
-	margin-left: 25%;
-	width: 70%;
-
-	background-image: url('pixels/inside.jpg');
-	background-repeat:no-repeat;
-    background-position:left bottom;
-    background-attachment:fixed;
-}
- 
 img
 {
 	border: 0px;
-}
-
-.center
-{
-	text-align:center;
-	margin: auto;
 }
