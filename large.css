@@ -1,0 +1,19 @@
+body
+{
+  margin-left: auto;
+  width: 100%;
+}
+
+.stackleft
+{
+    float:left;
+    margin-right:0;
+    width:40%;
+}
+
+.stackright
+{
+    float:right;
+    margin-left:0;
+    width:60%;
+}
